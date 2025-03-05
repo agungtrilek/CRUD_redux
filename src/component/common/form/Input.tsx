@@ -16,8 +16,8 @@ export default function Input({
   classNameLabel?: string;
   id?: string;
   type: string;
-  valueInput?: any;
-  onChange?: any;
+  valueInput?: string | number | readonly string[] | undefined;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder: string;
 }) {
   return (
